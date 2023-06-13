@@ -21,12 +21,16 @@ library(readr)    # Reading data
 library(reshape2) #For EDA correlation heatmap
 ```
 
+```{r include=FALSE}
+setwd("C:\\Users\\Monke\\My Tresors\\CodingNew\\R\\CS636_Final")
+```
+
+
 ## Import the Data 
 ```{r message=FALSE}
 
 tic()
 set.seed(123)
-setwd("C:\\Users\\Monke\\My Tresors\\CodingNew\\R\\CS636_Final")
 
 mydir = "Dataset"
 myfiles = list.files(path=mydir, pattern="*.csv", full.names=TRUE)
